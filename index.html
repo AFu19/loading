@@ -1,0 +1,56 @@
+<html><head>
+	<title>Loading</title>
+<style>
+body{
+	margin: 0;
+	background: #0d1619;
+	overflow: hidden;
+}
+#loader-container{
+	width: 200px;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+	position: absolute;
+}
+.loader-div{
+	width: calc(100% - 16px);
+	height: calc(100% - 16px);
+	border: 8px solid #162534;
+	border-top: 8px solid #09f;
+	border-radius: 50%;
+	animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+	100%{transform: rotate(0deg);}
+	90%{transform: rotate(36deg);}
+	80%{transform: rotate(72deg);}
+	70%{transform: rotate(108deg);}
+	60%{transform: rotate(144deg);}
+	50%{transform: rotate(180deg);}
+	40%{transform: rotate(216deg);}
+	30%{transform: rotate(252deg);}
+	20%{transform: rotate(288deg);}
+	10%{transform: rotate(270deg);}
+	0%{transform: rotate(360deg);}
+}
+</style>
+</head>
+<body>
+
+<div id="loader-container">
+	<div class="loader-div">
+		<div class="loader-div">
+			<div class="loader-div">
+				<div class="loader-div">
+					<div class="loader-div">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
